@@ -77,9 +77,9 @@ def borderSumRecursively(matrix, answer):
     matrix.pop(0)
     # pop bottom from matrix
     matrix.pop(-1)
-    # remove 0 from each matrix
+    # remove 0 from each column
     list(map(lambda list_: list_.pop(0), matrix))
-    # remove -1 from each matrix
+    # remove -1 from each column
     list(map(lambda list_: list_.pop(-1), matrix))
 
 
@@ -112,9 +112,9 @@ def borderSum(matrix):
         matrix.pop(0)
         # pop bottom from matrix
         matrix.pop(-1)
-        # remove 0 from each matrix
+        # remove 0 from each column
         list(map(lambda list_: list_.pop(0), matrix))
-        # remove -1 from each matrix
+        # remove -1 from each column
         list(map(lambda list_: list_.pop(-1), matrix))
 
     return answer
