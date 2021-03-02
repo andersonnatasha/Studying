@@ -16,7 +16,7 @@ class Queue():
         return f'<Head {self.head.data}, Tail {self.tail.data}>'
 
     def is_empty(self):
-        return self.head
+        return self.head == None
 
     def peek(self):
         return self.head.data
@@ -54,7 +54,7 @@ class Stack:
         return f'<Top {self.top.data}>'
 
     def is_empty(self):
-        return not bool(self.top)
+        return self.top == None
 
     def peek(self):
         if not self.top:
